@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz App</title>
+    
+</head>
+<body>
+    <!-- placeholder for questions -->
+    <!-- radio buttons for answers -->
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">Question Text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Question </label>
+                </li>
+                <!-- each question needs to have 4 questions
+                so we will copy the li 3 more times -->
+                <li>
+                    <!-- everything stays the same except id we need to change it in the input tag and the label tag (id and for)-->
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Question </label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Question </label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Question </label>
+                </li>
+            </ul>
+        </div>
+        <!-- submit button will go outside of the heder -->
+        <button id="submit">Submit</button>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

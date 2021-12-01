@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #71eee4;
+    background-image: linear-gradient(to left, #71eee4 0%, #caffa7 100%);
+    font-family: monospace;
+    display: flex;
+    align-items: center; /*can't use align-items if we don't have height*/
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* because of the horizontal scroll (we can also fix this by setting margin and padding to 0 for the global style */
+    margin: 0;
+}
+
+.quiz-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 600px;
+    overflow: hidden; /*so nothing goes out of the container*/
+ 
+}
+
+.quiz-header {
+    padding: 4rem;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin:0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    
+}
+
+/* input {
+    cursor: pointer;
+} */
+
+ul li label {
+    cursor: pointer;
+}
+
+button {
+    background-color: #8b59ff;
+    border: none;
+    color: white;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+
+button:hover {
+    background-color: #783eff;
+}
+
+button:focus {
+    outline: none;
+    background-color: #783eff;
+}
